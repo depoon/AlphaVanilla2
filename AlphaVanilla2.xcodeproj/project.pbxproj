@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7EC722C1791CF1A00103088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EC722B1791CF1A00103088 /* UIKit.framework */; };
+		C7EC722E1791CF1A00103088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EC722D1791CF1A00103088 /* Foundation.framework */; };
+		C7EC72301791CF1A00103088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EC722F1791CF1A00103088 /* CoreGraphics.framework */; };
+		C7EC72361791CF1A00103088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72341791CF1A00103088 /* InfoPlist.strings */; };
+		C7EC72381791CF1B00103088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72371791CF1B00103088 /* main.m */; };
+		C7EC723C1791CF1B00103088 /* PoonDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC723B1791CF1B00103088 /* PoonDemoAppDelegate.m */; };
+		C7EC723E1791CF1B00103088 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC723D1791CF1B00103088 /* Default.png */; };
+		C7EC72401791CF1B00103088 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC723F1791CF1B00103088 /* Default@2x.png */; };
+		C7EC72421791CF1B00103088 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72411791CF1B00103088 /* Default-568h@2x.png */; };
+		C7EC724B1791CF9C00103088 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC724A1791CF9C00103088 /* MainMenuViewController.m */; };
+		C7EC724E1791CFF700103088 /* MainMenuViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC724D1791CFF700103088 /* MainMenuViewManager.m */; };
+		C7EC72531791D3B400103088 /* woodKitchen.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72511791D3B400103088 /* woodKitchen.png */; };
+		C7EC72541791D3B400103088 /* woodKitchen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72521791D3B400103088 /* woodKitchen@2x.png */; };
+		C7EC72581791D54300103088 /* ParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72571791D54300103088 /* ParseManager.m */; };
+		C7EC725B1791D5D300103088 /* AlphaVanillaApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC725A1791D5D300103088 /* AlphaVanillaApplication.m */; };
+		C7EC72621791E29E00103088 /* login-button-small-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC725E1791E29E00103088 /* login-button-small-pressed.png */; };
+		C7EC72631791E29E00103088 /* login-button-small-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC725F1791E29E00103088 /* login-button-small-pressed@2x.png */; };
+		C7EC72641791E29E00103088 /* login-button-small.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72601791E29E00103088 /* login-button-small.png */; };
+		C7EC72651791E29E00103088 /* login-button-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72611791E29E00103088 /* login-button-small@2x.png */; };
+		C7EC728317925BA900103088 /* AnimationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC728217925BA900103088 /* AnimationHandler.m */; };
+		C7EC72871792627900103088 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72851792627900103088 /* icon.png */; };
+		C7EC72881792627900103088 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72861792627900103088 /* icon@2x.png */; };
+		C7EC728C1797135C00103088 /* MainModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC728B1797135C00103088 /* MainModuleViewController.m */; };
+		C7EC7292179716D800103088 /* CreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC7291179716D800103088 /* CreateBetViewController.m */; };
+		C7EC72951798062500103088 /* createBetImagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72931798062400103088 /* createBetImagePlaceholder.png */; };
+		C7EC72961798062500103088 /* createBetImagePlaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC72941798062400103088 /* createBetImagePlaceholder@2x.png */; };
+		C7EC729D17980A5A00103088 /* generalBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC729B17980A5A00103088 /* generalBackground.png */; };
+		C7EC729E17980A5A00103088 /* generalBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EC729C17980A5A00103088 /* generalBackground@2x.png */; };
+		C7EC72A217980D1100103088 /* BetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72A117980D1100103088 /* BetObject.m */; };
+		C7EC72A71798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72A61798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.m */; };
+		C7EC72AA1798442F00103088 /* BetListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72A91798442F00103088 /* BetListObject.m */; };
+		C7EC72AE179859F000103088 /* PGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72AD179859F000103088 /* PGColor.m */; };
+		C7EC72B217985F9E00103088 /* FacebookImageLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EC72B117985F9E00103088 /* FacebookImageLoadManager.m */; };
+		CB604E4569CA4DAAA591AED1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0346079DEEF47EA9583B555 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C5F1299EFB347E99C1C6EF7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C7EC72281791CF1A00103088 /* AlphaVanilla2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaVanilla2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EC722B1791CF1A00103088 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7EC722D1791CF1A00103088 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7EC722F1791CF1A00103088 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C7EC72331791CF1A00103088 /* AlphaVanilla2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlphaVanilla2-Info.plist"; sourceTree = "<group>"; };
+		C7EC72351791CF1A00103088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7EC72371791CF1B00103088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7EC72391791CF1B00103088 /* AlphaVanilla2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlphaVanilla2-Prefix.pch"; sourceTree = "<group>"; };
+		C7EC723A1791CF1B00103088 /* PoonDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoonDemoAppDelegate.h; sourceTree = "<group>"; };
+		C7EC723B1791CF1B00103088 /* PoonDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoonDemoAppDelegate.m; sourceTree = "<group>"; };
+		C7EC723D1791CF1B00103088 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C7EC723F1791CF1B00103088 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C7EC72411791CF1B00103088 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C7EC72491791CF9C00103088 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = Classes/MainMenuViewController.h; sourceTree = "<group>"; };
+		C7EC724A1791CF9C00103088 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = Classes/MainMenuViewController.m; sourceTree = "<group>"; };
+		C7EC724C1791CFF700103088 /* MainMenuViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewManager.h; path = Classes/MainMenuViewManager.h; sourceTree = "<group>"; };
+		C7EC724D1791CFF700103088 /* MainMenuViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewManager.m; path = Classes/MainMenuViewManager.m; sourceTree = "<group>"; };
+		C7EC72511791D3B400103088 /* woodKitchen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodKitchen.png; path = Resources/Images/woodKitchen.png; sourceTree = "<group>"; };
+		C7EC72521791D3B400103088 /* woodKitchen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "woodKitchen@2x.png"; path = "Resources/Images/woodKitchen@2x.png"; sourceTree = "<group>"; };
+		C7EC72561791D54300103088 /* ParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseManager.h; path = Classes/ParseManager.h; sourceTree = "<group>"; };
+		C7EC72571791D54300103088 /* ParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseManager.m; path = Classes/ParseManager.m; sourceTree = "<group>"; };
+		C7EC72591791D5D300103088 /* AlphaVanillaApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlphaVanillaApplication.h; path = Classes/AlphaVanillaApplication.h; sourceTree = SOURCE_ROOT; };
+		C7EC725A1791D5D300103088 /* AlphaVanillaApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlphaVanillaApplication.m; path = Classes/AlphaVanillaApplication.m; sourceTree = SOURCE_ROOT; };
+		C7EC725C1791DC1700103088 /* ParseManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseManagerDelegate.h; path = Classes/ParseManagerDelegate.h; sourceTree = "<group>"; };
+		C7EC725D1791E01E00103088 /* ParseFacebookLoginRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseFacebookLoginRequestDelegate.h; path = Classes/ParseFacebookLoginRequestDelegate.h; sourceTree = "<group>"; };
+		C7EC725E1791E29E00103088 /* login-button-small-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button-small-pressed.png"; path = "Resources/Images/login-button-small-pressed.png"; sourceTree = "<group>"; };
+		C7EC725F1791E29E00103088 /* login-button-small-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button-small-pressed@2x.png"; path = "Resources/Images/login-button-small-pressed@2x.png"; sourceTree = "<group>"; };
+		C7EC72601791E29E00103088 /* login-button-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button-small.png"; path = "Resources/Images/login-button-small.png"; sourceTree = "<group>"; };
+		C7EC72611791E29E00103088 /* login-button-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-button-small@2x.png"; path = "Resources/Images/login-button-small@2x.png"; sourceTree = "<group>"; };
+		C7EC72661791E91A00103088 /* ParseFacebookPostLoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseFacebookPostLoginDelegate.h; path = Classes/ParseFacebookPostLoginDelegate.h; sourceTree = "<group>"; };
+		C7EC728117925BA900103088 /* AnimationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationHandler.h; path = Classes/AnimationHandler.h; sourceTree = "<group>"; };
+		C7EC728217925BA900103088 /* AnimationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationHandler.m; path = Classes/AnimationHandler.m; sourceTree = "<group>"; };
+		C7EC72851792627900103088 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
+		C7EC72861792627900103088 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
+		C7EC72891797128100103088 /* MainMenuStartAppActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainMenuStartAppActionDelegate.h; path = Classes/MainMenuStartAppActionDelegate.h; sourceTree = "<group>"; };
+		C7EC728A1797135C00103088 /* MainModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainModuleViewController.h; path = Classes/MainModuleViewController.h; sourceTree = "<group>"; };
+		C7EC728B1797135C00103088 /* MainModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainModuleViewController.m; path = Classes/MainModuleViewController.m; sourceTree = "<group>"; };
+		C7EC7290179716D800103088 /* CreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBetViewController.h; path = Classes/CreateBetViewController.h; sourceTree = "<group>"; };
+		C7EC7291179716D800103088 /* CreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateBetViewController.m; path = Classes/CreateBetViewController.m; sourceTree = "<group>"; };
+		C7EC72931798062400103088 /* createBetImagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = createBetImagePlaceholder.png; path = Resources/Images/createBetImagePlaceholder.png; sourceTree = "<group>"; };
+		C7EC72941798062400103088 /* createBetImagePlaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "createBetImagePlaceholder@2x.png"; path = "Resources/Images/createBetImagePlaceholder@2x.png"; sourceTree = "<group>"; };
+		C7EC729B17980A5A00103088 /* generalBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = generalBackground.png; path = Resources/Images/generalBackground.png; sourceTree = "<group>"; };
+		C7EC729C17980A5A00103088 /* generalBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "generalBackground@2x.png"; path = "Resources/Images/generalBackground@2x.png"; sourceTree = "<group>"; };
+		C7EC72A017980D1100103088 /* BetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BetObject.h; path = Classes/BetObject.h; sourceTree = "<group>"; };
+		C7EC72A117980D1100103088 /* BetObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BetObject.m; path = Classes/BetObject.m; sourceTree = "<group>"; };
+		C7EC72A41798136F00103088 /* PGKeyboardInputAccessoryAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGKeyboardInputAccessoryAction.h; path = Classes/PGKeyboardInputAccessoryAction.h; sourceTree = "<group>"; };
+		C7EC72A51798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGKeyboardInputAccessoryViewGenerator.h; path = Classes/PGKeyboardInputAccessoryViewGenerator.h; sourceTree = "<group>"; };
+		C7EC72A61798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGKeyboardInputAccessoryViewGenerator.m; path = Classes/PGKeyboardInputAccessoryViewGenerator.m; sourceTree = "<group>"; };
+		C7EC72A81798442F00103088 /* BetListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BetListObject.h; path = Classes/BetListObject.h; sourceTree = "<group>"; };
+		C7EC72A91798442F00103088 /* BetListObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BetListObject.m; path = Classes/BetListObject.m; sourceTree = "<group>"; };
+		C7EC72AB17984D7300103088 /* ParseQueryBetRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseQueryBetRequestDelegate.h; path = Classes/ParseQueryBetRequestDelegate.h; sourceTree = "<group>"; };
+		C7EC72AC179859F000103088 /* PGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGColor.h; path = Classes/PGColor.h; sourceTree = "<group>"; };
+		C7EC72AD179859F000103088 /* PGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGColor.m; path = Classes/PGColor.m; sourceTree = "<group>"; };
+		C7EC72B017985F9E00103088 /* FacebookImageLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookImageLoadManager.h; path = Classes/FacebookImageLoadManager.h; sourceTree = "<group>"; };
+		C7EC72B117985F9E00103088 /* FacebookImageLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookImageLoadManager.m; path = Classes/FacebookImageLoadManager.m; sourceTree = "<group>"; };
+		C7EC72B31798619800103088 /* FacebookImageLoadRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FacebookImageLoadRequestDelegate.h; path = Classes/FacebookImageLoadRequestDelegate.h; sourceTree = "<group>"; };
+		C7EC72B41798690A00103088 /* ParseCreateBetRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParseCreateBetRequestDelegate.h; path = Classes/ParseCreateBetRequestDelegate.h; sourceTree = "<group>"; };
+		E0346079DEEF47EA9583B555 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7EC72251791CF1A00103088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EC722C1791CF1A00103088 /* UIKit.framework in Frameworks */,
+				C7EC722E1791CF1A00103088 /* Foundation.framework in Frameworks */,
+				C7EC72301791CF1A00103088 /* CoreGraphics.framework in Frameworks */,
+				CB604E4569CA4DAAA591AED1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7EC721F1791CF1A00103088 = {
+			isa = PBXGroup;
+			children = (
+				C7EC724F1791D3A300103088 /* Resources */,
+				C7EC72481791CF7400103088 /* Classes */,
+				C7EC72311791CF1A00103088 /* AlphaVanilla2 */,
+				C7EC722A1791CF1A00103088 /* Frameworks */,
+				C7EC72291791CF1A00103088 /* Products */,
+				5C5F1299EFB347E99C1C6EF7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C7EC72291791CF1A00103088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72281791CF1A00103088 /* AlphaVanilla2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7EC722A1791CF1A00103088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC722B1791CF1A00103088 /* UIKit.framework */,
+				C7EC722D1791CF1A00103088 /* Foundation.framework */,
+				C7EC722F1791CF1A00103088 /* CoreGraphics.framework */,
+				E0346079DEEF47EA9583B555 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7EC72311791CF1A00103088 /* AlphaVanilla2 */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC723A1791CF1B00103088 /* PoonDemoAppDelegate.h */,
+				C7EC723B1791CF1B00103088 /* PoonDemoAppDelegate.m */,
+				C7EC72591791D5D300103088 /* AlphaVanillaApplication.h */,
+				C7EC725A1791D5D300103088 /* AlphaVanillaApplication.m */,
+				C7EC72321791CF1A00103088 /* Supporting Files */,
+			);
+			path = AlphaVanilla2;
+			sourceTree = "<group>";
+		};
+		C7EC72321791CF1A00103088 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72331791CF1A00103088 /* AlphaVanilla2-Info.plist */,
+				C7EC72341791CF1A00103088 /* InfoPlist.strings */,
+				C7EC72371791CF1B00103088 /* main.m */,
+				C7EC72391791CF1B00103088 /* AlphaVanilla2-Prefix.pch */,
+				C7EC723D1791CF1B00103088 /* Default.png */,
+				C7EC723F1791CF1B00103088 /* Default@2x.png */,
+				C7EC72411791CF1B00103088 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7EC72481791CF7400103088 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72AF17985F7700103088 /* Manager */,
+				C7EC72A31798136700103088 /* Helpers */,
+				C7EC729F17980CE800103088 /* DomainObject */,
+				C7EC728F179716C600103088 /* Create */,
+				C7EC728E1797137000103088 /* Main */,
+				C7EC728D1797136600103088 /* Login */,
+				C7EC728017925B9500103088 /* AnimationHandler */,
+				C7EC72551791D52F00103088 /* ParseManager */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C7EC724F1791D3A300103088 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72501791D3A500103088 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7EC72501791D3A500103088 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72841792626D00103088 /* Application */,
+				C7EC72511791D3B400103088 /* woodKitchen.png */,
+				C7EC72521791D3B400103088 /* woodKitchen@2x.png */,
+				C7EC725E1791E29E00103088 /* login-button-small-pressed.png */,
+				C7EC725F1791E29E00103088 /* login-button-small-pressed@2x.png */,
+				C7EC72601791E29E00103088 /* login-button-small.png */,
+				C7EC72611791E29E00103088 /* login-button-small@2x.png */,
+				C7EC72931798062400103088 /* createBetImagePlaceholder.png */,
+				C7EC72941798062400103088 /* createBetImagePlaceholder@2x.png */,
+				C7EC729B17980A5A00103088 /* generalBackground.png */,
+				C7EC729C17980A5A00103088 /* generalBackground@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C7EC72551791D52F00103088 /* ParseManager */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72561791D54300103088 /* ParseManager.h */,
+				C7EC72571791D54300103088 /* ParseManager.m */,
+				C7EC725C1791DC1700103088 /* ParseManagerDelegate.h */,
+				C7EC725D1791E01E00103088 /* ParseFacebookLoginRequestDelegate.h */,
+				C7EC72661791E91A00103088 /* ParseFacebookPostLoginDelegate.h */,
+				C7EC72AB17984D7300103088 /* ParseQueryBetRequestDelegate.h */,
+				C7EC72B41798690A00103088 /* ParseCreateBetRequestDelegate.h */,
+			);
+			name = ParseManager;
+			sourceTree = "<group>";
+		};
+		C7EC728017925B9500103088 /* AnimationHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC728117925BA900103088 /* AnimationHandler.h */,
+				C7EC728217925BA900103088 /* AnimationHandler.m */,
+			);
+			name = AnimationHandler;
+			sourceTree = "<group>";
+		};
+		C7EC72841792626D00103088 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72851792627900103088 /* icon.png */,
+				C7EC72861792627900103088 /* icon@2x.png */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		C7EC728D1797136600103088 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72491791CF9C00103088 /* MainMenuViewController.h */,
+				C7EC724A1791CF9C00103088 /* MainMenuViewController.m */,
+				C7EC72891797128100103088 /* MainMenuStartAppActionDelegate.h */,
+				C7EC724C1791CFF700103088 /* MainMenuViewManager.h */,
+				C7EC724D1791CFF700103088 /* MainMenuViewManager.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C7EC728E1797137000103088 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC728A1797135C00103088 /* MainModuleViewController.h */,
+				C7EC728B1797135C00103088 /* MainModuleViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C7EC728F179716C600103088 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC7290179716D800103088 /* CreateBetViewController.h */,
+				C7EC7291179716D800103088 /* CreateBetViewController.m */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		C7EC729F17980CE800103088 /* DomainObject */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72A017980D1100103088 /* BetObject.h */,
+				C7EC72A117980D1100103088 /* BetObject.m */,
+				C7EC72A81798442F00103088 /* BetListObject.h */,
+				C7EC72A91798442F00103088 /* BetListObject.m */,
+			);
+			name = DomainObject;
+			sourceTree = "<group>";
+		};
+		C7EC72A31798136700103088 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72A41798136F00103088 /* PGKeyboardInputAccessoryAction.h */,
+				C7EC72A51798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.h */,
+				C7EC72A61798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.m */,
+				C7EC72AC179859F000103088 /* PGColor.h */,
+				C7EC72AD179859F000103088 /* PGColor.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C7EC72AF17985F7700103088 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC72B017985F9E00103088 /* FacebookImageLoadManager.h */,
+				C7EC72B117985F9E00103088 /* FacebookImageLoadManager.m */,
+				C7EC72B31798619800103088 /* FacebookImageLoadRequestDelegate.h */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7EC72271791CF1A00103088 /* AlphaVanilla2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EC72451791CF1B00103088 /* Build configuration list for PBXNativeTarget "AlphaVanilla2" */;
+			buildPhases = (
+				B734F24E4E124C15998CE66A /* Check Pods Manifest.lock */,
+				C7EC72241791CF1A00103088 /* Sources */,
+				C7EC72251791CF1A00103088 /* Frameworks */,
+				C7EC72261791CF1A00103088 /* Resources */,
+				9BD5875423774D4684EC5652 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphaVanilla2;
+			productName = AlphaVanilla2;
+			productReference = C7EC72281791CF1A00103088 /* AlphaVanilla2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7EC72201791CF1A00103088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PoonDemo;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Kenneth;
+			};
+			buildConfigurationList = C7EC72231791CF1A00103088 /* Build configuration list for PBXProject "AlphaVanilla2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7EC721F1791CF1A00103088;
+			productRefGroup = C7EC72291791CF1A00103088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7EC72271791CF1A00103088 /* AlphaVanilla2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7EC72261791CF1A00103088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EC72361791CF1A00103088 /* InfoPlist.strings in Resources */,
+				C7EC723E1791CF1B00103088 /* Default.png in Resources */,
+				C7EC72401791CF1B00103088 /* Default@2x.png in Resources */,
+				C7EC72421791CF1B00103088 /* Default-568h@2x.png in Resources */,
+				C7EC72531791D3B400103088 /* woodKitchen.png in Resources */,
+				C7EC72541791D3B400103088 /* woodKitchen@2x.png in Resources */,
+				C7EC72621791E29E00103088 /* login-button-small-pressed.png in Resources */,
+				C7EC72631791E29E00103088 /* login-button-small-pressed@2x.png in Resources */,
+				C7EC72641791E29E00103088 /* login-button-small.png in Resources */,
+				C7EC72651791E29E00103088 /* login-button-small@2x.png in Resources */,
+				C7EC72871792627900103088 /* icon.png in Resources */,
+				C7EC72881792627900103088 /* icon@2x.png in Resources */,
+				C7EC72951798062500103088 /* createBetImagePlaceholder.png in Resources */,
+				C7EC72961798062500103088 /* createBetImagePlaceholder@2x.png in Resources */,
+				C7EC729D17980A5A00103088 /* generalBackground.png in Resources */,
+				C7EC729E17980A5A00103088 /* generalBackground@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BD5875423774D4684EC5652 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		B734F24E4E124C15998CE66A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7EC72241791CF1A00103088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EC72381791CF1B00103088 /* main.m in Sources */,
+				C7EC723C1791CF1B00103088 /* PoonDemoAppDelegate.m in Sources */,
+				C7EC724B1791CF9C00103088 /* MainMenuViewController.m in Sources */,
+				C7EC724E1791CFF700103088 /* MainMenuViewManager.m in Sources */,
+				C7EC72581791D54300103088 /* ParseManager.m in Sources */,
+				C7EC725B1791D5D300103088 /* AlphaVanillaApplication.m in Sources */,
+				C7EC728317925BA900103088 /* AnimationHandler.m in Sources */,
+				C7EC728C1797135C00103088 /* MainModuleViewController.m in Sources */,
+				C7EC7292179716D800103088 /* CreateBetViewController.m in Sources */,
+				C7EC72A217980D1100103088 /* BetObject.m in Sources */,
+				C7EC72A71798136F00103088 /* PGKeyboardInputAccessoryViewGenerator.m in Sources */,
+				C7EC72AA1798442F00103088 /* BetListObject.m in Sources */,
+				C7EC72AE179859F000103088 /* PGColor.m in Sources */,
+				C7EC72B217985F9E00103088 /* FacebookImageLoadManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7EC72341791CF1A00103088 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7EC72351791CF1A00103088 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7EC72431791CF1B00103088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7EC72441791CF1B00103088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7EC72461791CF1B00103088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5F1299EFB347E99C1C6EF7 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaVanilla2/AlphaVanilla2-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "AlphaVanilla2/AlphaVanilla2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7EC72471791CF1B00103088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5F1299EFB347E99C1C6EF7 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaVanilla2/AlphaVanilla2-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "AlphaVanilla2/AlphaVanilla2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7EC72231791CF1A00103088 /* Build configuration list for PBXProject "AlphaVanilla2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EC72431791CF1B00103088 /* Debug */,
+				C7EC72441791CF1B00103088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7EC72451791CF1B00103088 /* Build configuration list for PBXNativeTarget "AlphaVanilla2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EC72461791CF1B00103088 /* Debug */,
+				C7EC72471791CF1B00103088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7EC72201791CF1A00103088 /* Project object */;
+}
