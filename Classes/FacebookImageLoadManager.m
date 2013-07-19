@@ -54,10 +54,9 @@
 
 
 - (void)requestFinished:(ASIHTTPRequest *)_request{
-    NSLog(@"facebook request requestFinished");
+
     
     if ([_request responseStatusCode] == 200){
-    NSLog(@"facebook request requestFinished and 200");
         NSDictionary* imageDictionary = _request.userInfo;
         UIImageView* imageView = [imageDictionary objectForKey:@"imageView"];
         NSData* imageData = [_request responseData];

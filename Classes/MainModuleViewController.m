@@ -71,8 +71,15 @@ int MainModuleViewController_imageViewTag = 100;
     [self.navigationController setNavigationBarHidden:NO];
 }
 
+-(void) setupBackgroundView{
+    UIImage* backgroundImage = [UIImage imageNamed:@"generalBackground"];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:backgroundImage]];
+}
+
 -(void) viewDidLoad{
     [super viewDidLoad];
+    [self setupBackgroundView];
+    [self.tableView setSeparatorColor:[UIColor clearColor]];
     
     UIBarButtonItem* createBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(createBet)];
     [self.navigationItem setRightBarButtonItem:createBarButtonItem animated:YES];
@@ -153,9 +160,6 @@ int MainModuleViewController_imageViewTag = 100;
     BetObject* betObject = [betListObject getBetAtIndex:indexPath.row];
     
     NSString* facebookId = betObject.offerFacebookId;
-    if (indexPath.row==1){
-        facebookId = @"gilbert.chia";
-    }
     
 
     UIImageView* offerIdImageView = [[UIImageView alloc]initWithImage:nil];
@@ -209,10 +213,7 @@ int MainModuleViewController_imageViewTag = 100;
     
 }
 -(void) queryFinishedLoading: (NSArray*) resultsArray{
-    [betListObject addBetsArray:resultsArray];
-    NSLog(@"after loading objects count: %d", [resultsArray count]);
-    NSLog(@"after loading table count: %d", [betListObject getTotalCount]);
-    
+    [betListObject addBetsArray:resultsArray];    
     [self.tableView reloadData];
 
 }

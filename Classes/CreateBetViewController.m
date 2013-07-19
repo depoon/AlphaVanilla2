@@ -207,7 +207,7 @@
 }
 
 -(void) askPhoto{
-    NSLog(@"askPhoto");
+
     
     // Check for camera
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == YES) {

@@ -63,13 +63,20 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
 
 }
 
+-(void) setupBackgroundView{
+    UIImage* backgroundImage = [UIImage imageNamed:@"generalBackground"];
+    [mainView setBackgroundColor:[UIColor colorWithPatternImage:backgroundImage]];
+}
+
 -(void) setupView: (UIView*) _mainView{
     [self setMainView:_mainView];
+    [self setupBackgroundView];
+    /*
     UIImage* backgroundImage = [UIImage imageNamed:@"woodKitchen"];
     UIImageView* backgroundImageView = [[UIImageView alloc]initWithImage:backgroundImage];
     [mainView addSubview:backgroundImageView];
     [backgroundImageView release];
-    
+    */
     [self showWelcome];
     
     
@@ -94,7 +101,7 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
     
     UILabel* welcomeLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, 280, 40)];
     [welcomeLabel setTextAlignment:NSTextAlignmentCenter];
-    [welcomeLabel setText:@"Welcome to Kitchen Snap"];
+    [welcomeLabel setText:@"Welcome to Bet & Snap"];
     [welcomeLabel setTextColor:[UIColor whiteColor]];
     
     [welcomeLabel setBackgroundColor:[UIColor clearColor]];
@@ -197,6 +204,9 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
     UIButton* enterAppButton = [[UIButton alloc]initWithFrame:CGRectMake(facebookLogoutButton.frame.origin.x, facebookLogoutButton.frame.origin.y+facebookLogoutButton.frame.size.height+15, facebookLogoutButton.frame.size.width, 35)];
     [enterAppButton addTarget:self action:@selector(enterApp) forControlEvents:UIControlEventTouchUpInside];
     [enterAppButton setTitle:@"Enter App" forState:UIControlStateNormal];
+    enterAppButton.layer.cornerRadius = 5;
+    enterAppButton.layer.masksToBounds = YES;
+
     [enterAppButton setBackgroundColor:[UIColor darkGrayColor]];
     [enterAppButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [facebookProfileBaseView addSubview:enterAppButton];
@@ -229,7 +239,7 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
 
 
 -(void) reloadMainMenu{
-    NSLog(@"reloadMainMenu");
+
     [self resetView];
     if ([self isCurrentFacebookUserLogin]){
         
@@ -260,7 +270,6 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
 }
 
 -(void) facebookLogout{
-    NSLog(@"facebookLogout");
     if (parseFacebookLoginRequestDelegate){
         [parseFacebookLoginRequestDelegate logoutFacebook];
     }
@@ -283,7 +292,7 @@ int const MainMenuViewManager_tag_facebookProfileBaseView = 101;
 }
 
 -(void) didSuccessfulFacebookLogout{
-    NSLog(@"didSuccessfulFacebookLogout");
+
 
 
     UIView* profileView = [mainView viewWithTag:MainMenuViewManager_tag_facebookProfileBaseView];
